@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 8vh;
+    padding: 0.5rem 1rem;
+    background-color: #0F2D3A;
+    box-sizing: border-box;
+}
+nav > h1{
+    font-weight: 800;
+    font-style: italic;
+}
+
+.search-area{
+    width: 30%;
+    position: relative;
+}
+
+#search-bar{
+    border: none;
+    padding: 0.7rem 0.7rem;
+    box-sizing: border-box;
+    border-radius: 25px;
+    width: 100%;
+}
+
+.search-btn, .clear-btn{
+    background-color: #15847D;
+    border: none;
+    padding: 6px 12px;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.35rem;
+    border-radius: 10px;
+}
+.search-btn{
+    right: 4rem;
+}
+
+ul{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+/*
+################################### Main Section ##################################
+*/
+
+main{
+    padding: 2rem 1rem;
+    padding-top: 5rem;
+    background-image: url('src/Cairo.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin: 2rem;
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.main-part{
+    padding-right: 50%;
+}
+.main-part > h1{
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+}
+.main-part > p{
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 0.8rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+    color: #0F2D3A;
+}
+.main-part > button {
+    border: none;
+    border-radius: 5px;
+    background-color: #004D40;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+
