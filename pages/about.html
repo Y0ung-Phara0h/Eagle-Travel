@@ -4,8 +4,182 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Eagle Travel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+        }
+
+        .blur-effect{
+            background-color: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            padding: 1.3rem 0.8rem;
+            border-radius: 10px;
+        }
+
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 8vh;
+            padding: 0.5rem 1rem;
+            background-color: #0F2D3A;
+            box-sizing: border-box;
+        }
+        nav > h1{
+            font-weight: 800;
+            font-style: italic;
+            position: absolute;
+            left: 10%;
+        }
+        ul{
+            display: flex;
+            gap: 3rem;
+            list-style: none;
+        }
+        li a{
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+        }
+        /*
+        ################################### Main Section ##################################
+        */
+
+        main{
+            padding: 1rem;
+            background-image: url('../src/Cairo.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 92vh;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .social{
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            margin: 2rem;
+            margin-left: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .main-part > h1, .team-part > h1{
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            text-shadow: 1px 1px 3px #0F2D3A;
+        }
+        .main-part > p{
+            margin-bottom: 1rem;
+            margin-left: 5%;
+            margin-right: 5%;
+            line-height: 1.5rem;
+            color: #0F2D3A;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+       
+        .team-members{
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .member{
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.8rem;
+        }
+        .member > p{
+            text-align: center;
+        }
+        .member > h3{
+            background-color: #1B4F72;
+            padding: 0.5rem 0.7rem;
+            border-radius: 15px;
+        }
+
+        .usr-img{
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 5rem;
+            width: 5rem;
+            border-radius: 50%;
+        }
+        .osama{
+            background-image: url('../src/osama.jpg');
+            border: 2px solid blue;
+        }
+        .yehia{
+            background-image: url('../src/yehia.jpg');
+            border: 2px solid #FAF5E6;
+        }
+        .eslam{
+            background-image: url('../src/eslam.jpg');
+            border: 2px solid #601CFC;
+        }
+    </style>
 </head>
 <body>
-    
+    <nav>
+        <h1>Eagle Travel</h1>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="social blur-effect">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="main-part">
+            <h1>ABOUT US</h1>
+            <p class="blur-effect">
+                Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent services/products to our customers. <br> Our mission is to
+                provide the best experience for people traveling to different destinations around the world.
+                Our values include integrity, innovation, customer satisfaction, and teamwork. We believe in putting our customers first and working together to achieve our goals. <br>
+                Feel free to explore our website to learn more about what we offer!
+            </p>
+
+            <div class="team-part">
+                <h1>Our Team</h1>
+                <div class="team-members">
+                    <div class="member blur-effect">
+                        <!-- <i class="fa-regular fa-circle-user"></i> -->
+                        <div class="usr-img osama"></div>
+                        <h2>Osama El-Zero</h2>
+                        <p>Osama is responsible for overall <br> company strategy and vision.</p>
+                        <h3>CEO</h3>
+                    </div>
+                    <div class="member blur-effect">
+                        <div class="usr-img yehia"></div>
+                        <h2>Yehia Tech</h2>
+                        <p>Yehia leads the technical and <br> operations team</p>
+                        <h3>Team Lead</h3>
+                    </div>
+                    <div class="member blur-effect">
+                        <div class="usr-img eslam"></div>
+                        <h2>Eslam Codezilla</h2>
+                        <p>Eslam manages project delivery <br> and client relationships.</p>
+                        <h3>Delivery Head</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
