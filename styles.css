@@ -90,12 +90,12 @@ main{
 .main-part{
     padding-right: 50%;
 }
-.main-part > h1{
+.title{
     font-size: 4rem;
     line-height: 4rem;
     margin-bottom: 2rem;
 }
-.main-part > p{
+.summary{
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     padding: 0.8rem;
@@ -113,4 +113,32 @@ main{
     margin-left: 1rem;
 }
 
+
+/*
+################################### Card Styling ##################################
+*/
+
+.card{
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+.card h1{
+    color: #15847D;
+    text-shadow: 1px 1px 3px #0F2D3A;
+}
+.card > h2, .card h3{
+    color: #0F2D3A;
+    text-align: center;
+}
+.card-img{
+    width: 100%;
+    aspect-ratio: 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 

@@ -6,12 +6,12 @@
           "cities": [
             {
               "name": "Cairo, Egypt",
-              "imageUrl": "https://unsplash.com/photos/aerial-photography-of-pyramids-of-egypt-rxv2qwYPe6s",
+              "imageUrl": "https://images.unsplash.com/photo-1541769740-098e80269166?q=80",
               "description": "A historic city known for the Pyramids of Giza, the Nile River, and its rich ancient heritage."
             },
             {
               "name": "Marsa Alam, Egypt",
-              "imageUrl": "https://unsplash.com/photos/brown-wooden-frame-on-white-sand-beach-during-daytime-zI4bagzJuOc",
+              "imageUrl": "https://images.unsplash.com/photo-1626358228177-abe1b30e1283?q=80",
               "description": "A beautiful coastal destination famous for its coral reefs, clear waters, and relaxing beaches."
             }
           ]
@@ -22,12 +22,12 @@
           "cities": [
             {
               "name": "Marrakech, Morocco",
-              "imageUrl": "https://unsplash.com/photos/vibrant-orange-building-with-a-pool-and-blooming-pink-flowers-HWVBd8M7c-A",
+              "imageUrl": "https://images.unsplash.com/photo-1784667543948-d2599112656b?q=80",
               "description": "A colorful city filled with traditional markets, historic palaces, and beautiful gardens."
             },
             {
               "name": "Chefchaouen, Morocco",
-              "imageUrl": "https://unsplash.com/photos/blue-and-white-painted-houses-on-the-cliff-NncAbldgViA",
+              "imageUrl": "https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?q=80",
               "description": "A charming mountain town famous for its blue-painted streets and peaceful atmosphere."
             }
           ]
@@ -38,12 +38,12 @@
           "cities": [
             {
               "name": "Riyadh, Saudi Arabia",
-              "imageUrl": "https://unsplash.com/photos/a-tent-set-up-in-the-middle-of-a-desert-at-night-0qyPOqFJXQY",
+              "imageUrl": "https://images.unsplash.com/photo-1737063116565-9e1f0df683a2?q=80",
               "description": "A rapidly developing capital that combines modern skyscrapers, traditional culture, and desert scenery."
             },
             {
               "name": "AlUla, Saudi Arabia",
-              "imageUrl": "https://unsplash.com/photos/mud-brick-architecture-with-tower-reflection-kUANvJwGN4M",
+              "imageUrl": "https://images.unsplash.com/photo-1590959914819-b767b9fe4cfb?q=80",
               "description": "A spectacular historical destination known for dramatic rock formations, ancient sites, and desert landscapes."
             }
           ]
@@ -54,12 +54,12 @@
           "cities": [
             {
               "name": "Amman, Jordan",
-              "imageUrl": "https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-2B5lDWbitXE",
+              "imageUrl": "https://images.unsplash.com/photo-1597814419713-99e2923951b6?q=80",
               "description": "A welcoming hilltop city known for its ancient ruins, lively markets, and distinctive stone architecture."
             },
             {
               "name": "Petra, Jordan",
-              "imageUrl": "https://unsplash.com/photos/people-walking-on-brown-rocky-mountain-during-daytime-mYEqvgcY1G4",
+              "imageUrl": "https://images.unsplash.com/photo-1589825274556-94746a018766?q=80",
               "description": "An extraordinary ancient city carved into rose-colored cliffs and one of the region’s most famous landmarks."
             }
           ]
@@ -70,12 +70,12 @@
           "cities": [
             {
               "name": "Muscat, Oman",
-              "imageUrl": "https://unsplash.com/photos/arches-and-columns-in-a-grand-hall-with-sunlight-nywSwDNse2M",
+              "imageUrl": "https://images.unsplash.com/photo-1755114421831-06eae0eb4188?q=80",
               "description": "A scenic coastal capital surrounded by mountains and known for its forts, mosques, and traditional architecture."
             },
             {
               "name": "Nizwa, Oman",
-              "imageUrl": "https://unsplash.com/photos/ancient-earthen-fortress-under-a-clear-blue-sky-3vn2efMzu_c",
+              "imageUrl": "https://images.unsplash.com/photo-1760727748992-86c169567f6f?q=80",
               "description": "A historic city famous for its impressive fort, traditional souq, and cultural heritage."
             }
           ]
@@ -86,12 +86,12 @@
           "cities": [
             {
               "name": "Tunis, Tunisia",
-              "imageUrl": "https://unsplash.com/photos/a-large-stone-building-with-el-djem-in-the-background-Df7s58si_mM",
+              "imageUrl": "https://images.unsplash.com/photo-1665083767499-ce88decba1a2?q=80",
               "description": "A vibrant capital blending ancient medinas, Mediterranean charm, and modern city life."
             },
             {
               "name": "Sidi Bou Said, Tunisia",
-              "imageUrl": "https://unsplash.com/photos/aerial-view-of-green-trees-and-white-buildings-near-sea-under-cloudy-sky-during-daytime-IDZCx_2hQKw",
+              "imageUrl": "https://images.unsplash.com/photo-1624300179940-0dd409d8343b?q=80",
               "description": "A picturesque coastal town famous for its white buildings, blue doors, and stunning sea views."
             }
           ]
@@ -102,12 +102,12 @@
           "cities": [
             {
               "name": "Beirut, Lebanon",
-              "imageUrl": "https://unsplash.com/photos/two-rock-formations-in-body-of-water-mF4_MHgp4ps",
+              "imageUrl": "https://images.unsplash.com/photo-1521327895744-46e309d005b4?q=80",
               "description": "A lively Mediterranean city known for its coastline, cultural diversity, food, and vibrant nightlife."
             },
             {
               "name": "Byblos, Lebanon",
-              "imageUrl": "https://unsplash.com/photos/a-courtyard-with-tables-and-chairs-sBx0bnhjIpc",
+              "imageUrl": "https://images.unsplash.com/photo-1669406542628-56141edd534b?q=80",
               "description": "An ancient coastal city featuring historic ruins, a charming old harbor, and beautiful Mediterranean scenery."
             }
           ]
@@ -118,12 +118,12 @@
           "cities": [
             {
               "name": "Algiers, Algeria",
-              "imageUrl": "https://unsplash.com/photos/a-snow-covered-town-with-mountains-in-the-background--53Tf_F_V9Y",
+              "imageUrl": "https://images.unsplash.com/photo-1674763542686-39b5b0834483?q=80",
               "description": "A beautiful Mediterranean capital known for its white hillside buildings, historic neighborhoods, and sea views."
             },
             {
               "name": "Constantine, Algeria",
-              "imageUrl": "https://unsplash.com/photos/white-bridge-on-brown-rocky-mountain-during-daytime-6unlE3LgvGo",
+              "imageUrl": "https://images.unsplash.com/photo-1610364247977-446deb8de1af?q=80",
               "description": "A dramatic city built across deep gorges and famous for its impressive bridges and mountainous scenery."
             }
           ]
@@ -133,49 +133,49 @@
       {
         "id": 1,
         "name": "Angkor Wat, Cambodia",
-        "imageUrl": "https://unsplash.com/photos/angkor-wat-temple-in-siem-reap-gt3gK_Wob2g",
+        "imageUrl": "https://images.unsplash.com/photo-1599283787923-51b965a58b05?q=80",
         "description": "A UNESCO World Heritage site and the largest religious monument in the world."
       },
       {
         "id": 2,
         "name": "Taj Mahal, India",
-        "imageUrl": "https://unsplash.com/photos/taj-mahal-india-iWMfiInivp4",
+        "imageUrl": "https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80",
         "description": "An iconic symbol of love and a masterpiece of Mughal architecture."
       },
       {
         "id": 3,
         "name": "Borobudur Temple, Indonesia",
-        "imageUrl": "https://unsplash.com/photos/gold-and-white-temple-under-blue-sky-during-daytime-28joUilHigc",
+        "imageUrl": "https://images.unsplash.com/photo-1596402184320-417e7178b2cd?q=80",
         "description": "A magnificent Buddhist temple surrounded by lush landscapes and famous for its detailed stone carvings."
       },
       {
         "id": 4,
         "name": "Fushimi Inari Shrine, Japan",
-        "imageUrl": "https://unsplash.com/photos/rows-of-orange-and-black-tori-tori-tori-tori-tori-tori-tori-tori-tori-tori-tori-J6n-uzxX4BM",
+        "imageUrl": "https://images.unsplash.com/photo-1640546088631-fd6e3e88dec0?q=80",
         "description": "A famous Shinto shrine in Kyoto, recognized for its thousands of bright orange torii gates."
       },
       {
         "id": 5,
         "name": "Kinkaku-ji, Japan",
-        "imageUrl": "https://unsplash.com/photos/a-pagoda-in-the-middle-of-a-lake-surrounded-by-trees-985DmR-rX4A",
+        "imageUrl": "https://images.unsplash.com/photo-1653997412308-308d945f687b?q=80",
         "description": "A beautiful golden Zen temple in Kyoto reflected in a peaceful surrounding pond."
       },
       {
         "id": 6,
         "name": "Parthenon, Greece",
-        "imageUrl": "https://unsplash.com/photos/acropolis-of-athens-at-golden-hour-yqBvJJ8jGBQ",
+        "imageUrl": "https://images.unsplash.com/photo-1603565816030-6b389eeb23cb?q=80",
         "description": "An ancient temple on the Acropolis of Athens and one of the most important symbols of classical Greece."
       },
       {
         "id": 7,
         "name": "Baalbek Temples, Lebanon",
-        "imageUrl": "https://unsplash.com/photos/ancient-stone-columns-in-baalbek-qG3NeyHMI_0",
+        "imageUrl": "https://images.unsplash.com/photo-1786954320078-15e67a2990c4?q=80",
         "description": "A remarkable ancient Roman temple complex known for its enormous columns and impressive ruins."
       },
       {
         "id": 8,
         "name": "Temple Abu Simbel, Egypt",
-        "imageUrl": "https://unsplash.com/photos/a-large-building-with-statues-on-the-side-of-it-cxijyrxOFCE",
+        "imageUrl": "https://images.unsplash.com/photo-1648139210599-aa27a54177a4?q=80",
         "description": "A vast ancient Egyptian temple complex filled with monumental columns, statues, and hieroglyphics."
       }
     ],
@@ -183,49 +183,49 @@
       {
         "id": 1,
         "name": "Bora Bora, French Polynesia",
-        "imageUrl": "https://unsplash.com/photos/the-water-is-crystal-blue-and-clear-and-there-are-huts-in-the-water-oSIoto5nhqU",
+        "imageUrl": "https://images.unsplash.com/photo-1738762932370-468a90e0ff68?q=80",
         "description": "An island known for its stunning turquoise waters and luxurious overwater bungalows."
       },
       {
         "id": 2,
         "name": "Copacabana Beach, Brazil",
-        "imageUrl": "https://unsplash.com/photos/a-crowded-beach-with-a-mountain-in-the-background-lXrGBJqIGH0",
+        "imageUrl": "https://images.unsplash.com/photo-1714520845050-667070dd8fd0?q=80",
         "description": "A famous beach in Rio de Janeiro, Brazil, with a vibrant atmosphere and scenic views."
       },
       {
         "id": 3,
         "name": "Whitehaven Beach, Australia",
-        "imageUrl": "https://unsplash.com/photos/blue-sea-under-blue-sky-during-daytime-EWqla12KBjs",
+        "imageUrl": "https://images.unsplash.com/photo-1626222317285-014ffb6ac543?q=80",
         "description": "A spectacular beach famous for its brilliant white silica sand and clear turquoise water."
       },
       {
         "id": 4,
         "name": "Navagio Beach, Greece",
-        "imageUrl": "https://unsplash.com/photos/an-aerial-view-of-a-beach-and-a-cliff-o3gvhhg89vo",
+        "imageUrl": "https://images.unsplash.com/photo-1688406810599-979dd379ae98?q=80",
         "description": "A dramatic secluded beach surrounded by steep cliffs and known for its striking blue water."
       },
       {
         "id": 5,
         "name": "Maya Bay, Thailand",
-        "imageUrl": "https://unsplash.com/photos/a-group-of-boats-floating-on-top-of-a-body-of-water-yW6Z-ToUROQ",
+        "imageUrl": "https://images.unsplash.com/photo-1708447461404-57725d3cdb6e?q=80",
         "description": "A breathtaking tropical bay surrounded by limestone cliffs and crystal-clear water."
       },
       {
         "id": 6,
         "name": "Anse Source d’Argent, Seychelles",
-        "imageUrl": "https://unsplash.com/photos/sea-waves-crashing-on-shore-during-daytime-FjDaN9WlRLg",
+        "imageUrl": "https://images.unsplash.com/photo-1618822461310-da1be362e30c?q=80",
         "description": "A beautiful beach known for its huge granite boulders, soft sand, and shallow turquoise water."
       },
       {
         "id": 7,
         "name": "Sharm El-Sheikh, Egypt",
-        "imageUrl": "https://unsplash.com/photos/a-pool-surrounded-by-palm-trees-next-to-the-ocean-8dvES21K4ug",
+        "imageUrl": "https://images.unsplash.com/photo-1679594384071-0e25b01f8aca?q=80",
         "description": "A stunning tropical beach surrounded by palm trees next to the ocean"
       },
       {
         "id": 8,
         "name": "Grace Bay Beach, Turks and Caicos",
-        "imageUrl": "https://unsplash.com/photos/white-table-and-chairs-near-green-palm-tree-during-daytime--I9QvRBsvP0",
+        "imageUrl": "https://images.unsplash.com/photo-1608956905586-adaad6346779?q=80",
         "description": "A peaceful Caribbean beach famous for its soft white sand and calm, crystal-clear waters."
       }
     ]
