@@ -16,11 +16,6 @@ const cardsDiv = document.createElement("div");
 cardsDiv.classList.add("cards-div");
 
 
-// let city=[];
-// countries.forEach(country => {
-//     city.push(...country.cities)
-// });
-
 function createCard(img, titl, desc){
     const divCard = document.createElement("div");
     const cardImage = document.createElement("div");
@@ -58,19 +53,31 @@ searchBtn.addEventListener('click', ()=>{
     const queryTxt = inputBox.value.toLowerCase();
     if (queryTxt) {
         const cantry = countryList.find(country=>country.name.toLowerCase() == queryTxt);
-        const city = countryList.find((country)=>{country.cities.find(city=>city.name.toLowerCase() == queryTxt)});
+        const countryCity = countryList.flatMap(country=>country.cities).find(city=>city.name.toLowerCase() == queryTxt);
+        console.log(cantry, countryCity);
         if (cantry) {
             cantry.cities.forEach(city=>{
                 createCard(city.imageUrl, city.name, city.description)
             })
             searchArea.appendChild(cardsDiv);
-        }else if (city){
+        }else if (countryCity){
+            const city = countryCity.cities.find(city=>city.name.toLowerCase() == queryTxt)
             createCard(city.imageUrl, city.name, city.description)
             searchArea.appendChild(cardsDiv);
         }else{
             console.log('No Result found');
         }
     }else{
+        countryList.cities.forEach(city=>{
+            createCard(city.imageUrl, city.name, city.description)
+        });
+        beachList.forEach(beach=>{
+            createCard(beach.imageUrl, beach.name, beach.description)
+        });
+        templeList.forEach(temple=>{
+            createCard(temple.imageUrl, temple.name, temple.description)
+        });
+        searchArea.appendChild(cardsDiv);
         console.log('input field is empty');
     }
     
