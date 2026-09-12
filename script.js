@@ -12,6 +12,8 @@ const searchBtn = document.querySelector('.search-btn');
 const searchArea = document.querySelector('.main-part');
 const searchAreaElements = document.querySelectorAll('.main-part button, .main-part p, .main-part h1');
 const inputBox = document.getElementById('search-bar');
+const cardsDiv = document.createElement("div");
+cardsDiv.classList.add("cards-div");
 
 
 // let city=[];
@@ -22,15 +24,15 @@ const inputBox = document.getElementById('search-bar');
 function createCard(img, titl, desc){
     const divCard = document.createElement("div");
     const cardImage = document.createElement("div");
-    cardImage.classList.append("card-img");
+    cardImage.classList.add("card-img");
     cardImage.style.backgroundImage = `url('${img}')`;
     const cardTitle = document.createElement("h2");
     cardTitle.textContent = titl;
-    const cardDesc = document.createElement("h3");
+    const cardDesc = document.createElement("h4");
     cardDesc.innerText = desc;
-    divCard.classList.append("card")
+    divCard.classList.add("card")
     divCard.append(cardImage, cardTitle, cardDesc);
-    searchArea.appendChild(divCard);
+    cardsDiv.appendChild(divCard);
 };
 
 // Forwarding the user to the search bar upon clicking on the Book now Button
@@ -48,20 +50,23 @@ searchBtn.addEventListener('click', ()=>{
     const h1Element = document.createElement("h1");
     h1Element.textContent = "Search Result";
     searchArea.appendChild(h1Element);
+    searchArea.style.paddingRight = "10%";
     
     const countryList = fetchedData.countries;
     const beachList = fetchedData.beaches;
     const templeList = fetchedData.temples;
     const queryTxt = inputBox.value.toLowerCase();
     if (queryTxt) {
-        if (countryList.find(country=>{country.name.toLowerCase() == queryTxt})) {
-            const cantry = countryList.find(country=>country.name.toLowerCase() == queryTxt);
+        const cantry = countryList.find(country=>country.name.toLowerCase() == queryTxt);
+        const city = countryList.find((country)=>{country.cities.find(city=>city.name.toLowerCase() == queryTxt)});
+        if (cantry) {
             cantry.cities.forEach(city=>{
                 createCard(city.imageUrl, city.name, city.description)
             })
-        }else if (countryList.find(country=>{country.cities.find(city=>city.name.toLowerCase() == queryTxt)})){
-            const city = countryList.find((country)=>{country.cities.find(city=>city.name.toLowerCase() == queryTxt)});
+            searchArea.appendChild(cardsDiv);
+        }else if (city){
             createCard(city.imageUrl, city.name, city.description)
+            searchArea.appendChild(cardsDiv);
         }else{
             console.log('No Result found');
         }
