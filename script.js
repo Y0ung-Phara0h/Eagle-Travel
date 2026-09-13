@@ -4,7 +4,6 @@ fetch('./api.json')
   .then(response=>response.json())
   .then(data=>{
       fetchedData = data;
-      console.log(data);
   })
   .catch(err=>console.log(err));
 
@@ -16,13 +15,17 @@ const cardsDiv = document.createElement("div");
 cardsDiv.classList.add("cards-div");
 
 
-function createCard(img, titl, desc){
+function createCard(img, titl, desc, country){
     const divCard = document.createElement("div");
     const cardImage = document.createElement("div");
     cardImage.classList.add("card-img");
     cardImage.style.backgroundImage = `url('${img}')`;
     const cardTitle = document.createElement("h2");
-    cardTitle.textContent = titl;
+    if (country === undefined) {
+        cardTitle.textContent = titl;
+    }else{
+        cardTitle.textContent = titl+", "+country;
+    }
     const cardDesc = document.createElement("h4");
     cardDesc.innerText = desc;
     divCard.classList.add("card")
@@ -43,18 +46,26 @@ function addCards() {
     const queryTxt = inputBox.value.toLowerCase();
     if (queryTxt) {
         const cantry = countryList.find(country=>country.name.toLowerCase() == queryTxt);
-        const countryCity = countryList.flatMap(country=>country.cities).find(city=>city.name.toLowerCase() == queryTxt);
-        console.log(cantry, countryCity);
+        const city = countryList.flatMap(country=>country.cities).find(city=>city.name.toLowerCase() == queryTxt);
+        const beach = beachList.find(beachName=>beachName.name.toLowerCase().trim() == queryTxt.trim());
+        const temple = templeList.find(tem=>tem.name.toLowerCase().trim() == queryTxt.trim());
+        // console.log(temple);
         if (cantry) {
             cantry.cities.forEach(city=>{
                 createCard(city.imageUrl, city.name, city.description)
             })
             searchArea.appendChild(cardsDiv);
-        }else if (countryCity){
-            const city = countryCity.cities.find(city=>city.name.toLowerCase() == queryTxt)
-            createCard(city.imageUrl, city.name, city.description)
+        }else if (city){
+            createCard(city.imageUrl, city.name, city.description);
             searchArea.appendChild(cardsDiv);
-        }else{
+        }else if(beach){
+            createCard(beach.imageUrl, beach.name, beach.description, beach.country);
+            searchArea.appendChild(cardsDiv);
+        }else if(temple){
+            createCard(temple.imageUrl, temple.name, temple.description, temple.country);
+            searchArea.appendChild(cardsDiv);
+        }
+        else{
             console.log('No Result found');
         }
     }else{
