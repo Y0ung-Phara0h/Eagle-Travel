@@ -66,6 +66,17 @@ function addCards() {
         }else if(queryTxt == "temple" || queryTxt == "temples" || queryTxt == "historical" || queryTxt == "ancient"){
             templeList.forEach(tem=>createCard(tem.imageUrl, tem.name, tem.description, tem.country))
             searchArea.appendChild(cardsDiv);
+        }else if(queryTxt == "country" || queryTxt == "countries" || queryTxt == "state" || queryTxt == "states" || queryTxt == "city" || queryTxt == "cities"){
+            countryList.forEach(country=>country.cities.forEach(city=>{
+                createCard(city.imageUrl, city.name, city.description, country.name)
+            }));
+            beachList.forEach(beach=>{
+                createCard(beach.imageUrl, beach.name, beach.description, beach.country)
+            });
+            templeList.forEach(temple=>{
+                createCard(temple.imageUrl, temple.name, temple.description, temple.country)
+            });
+            searchArea.appendChild(cardsDiv);
         }
         else{
             const textElement = document.querySelector('.main-part > h1');
@@ -80,13 +91,13 @@ function addCards() {
     }else{
         // console.log(countryList);
         countryList.forEach(country=>country.cities.forEach(city=>{
-            createCard(city.imageUrl, city.name, city.description)
+            createCard(city.imageUrl, city.name, city.description, country.name)
         }));
         beachList.forEach(beach=>{
-            createCard(beach.imageUrl, beach.name, beach.description)
+            createCard(beach.imageUrl, beach.name, beach.description, beach.country)
         });
         templeList.forEach(temple=>{
-            createCard(temple.imageUrl, temple.name, temple.description)
+            createCard(temple.imageUrl, temple.name, temple.description, temple.country)
         });
         searchArea.appendChild(cardsDiv);
         console.log('input field is empty');
