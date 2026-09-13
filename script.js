@@ -10,7 +10,7 @@ fetch('./api.json')
 
 const searchBtn = document.querySelector('.search-btn');
 const searchArea = document.querySelector('.main-part');
-const searchAreaElements = document.querySelectorAll('.main-part button, .main-part p, .main-part h1');
+const searchAreaElements = document.querySelectorAll('.main-part button, .main-part p, .main-part h2');
 const inputBox = document.getElementById('search-bar');
 const cardsDiv = document.createElement("div");
 cardsDiv.classList.add("cards-div");
@@ -36,17 +36,7 @@ function createCard(img, titl, desc){
 //     searchBar.focus();
 // });
 
-
-
-searchBtn.addEventListener('click', ()=>{
-    searchAreaElements.forEach(elem=>{
-        elem.style.display = 'none';
-    })
-    const h1Element = document.createElement("h1");
-    h1Element.textContent = "Search Result";
-    searchArea.appendChild(h1Element);
-    searchArea.style.paddingRight = "10%";
-    
+function addCards() {
     const countryList = fetchedData.countries;
     const beachList = fetchedData.beaches;
     const templeList = fetchedData.temples;
@@ -68,9 +58,10 @@ searchBtn.addEventListener('click', ()=>{
             console.log('No Result found');
         }
     }else{
-        countryList.cities.forEach(city=>{
+        // console.log(countryList);
+        countryList.forEach(country=>country.cities.forEach(city=>{
             createCard(city.imageUrl, city.name, city.description)
-        });
+        }));
         beachList.forEach(beach=>{
             createCard(beach.imageUrl, beach.name, beach.description)
         });
@@ -80,7 +71,28 @@ searchBtn.addEventListener('click', ()=>{
         searchArea.appendChild(cardsDiv);
         console.log('input field is empty');
     }
-    
+}
+
+
+searchBtn.addEventListener('click', ()=>{
+    searchAreaElements.forEach(elem=>{
+        elem.style.display = 'none';
+    })
+    const elemento = document.querySelector('.main-part > h1');
+    if(!elemento){
+        const h1Element = document.createElement("h1");
+        h1Element.textContent = "Search Result";
+        h1Element.style.textShadow = "1px 1px 3px #0F2D3A";
+        searchArea.appendChild(h1Element);
+        searchArea.style.paddingRight = "0%";
+    }
+    if (cardsDiv.children.length > 0) {
+        cardsDiv.replaceChildren();
+        addCards();
+    }else{
+        addCards();
+    }
+     
 });
 
 
