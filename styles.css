@@ -78,15 +78,27 @@ main{
 .social{
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    align-items: center;
+    max-width: 20%;
+    gap: 1.7rem;
     margin: 2rem;
     margin-left: 0.5rem;
     font-size: 1.5rem;
+    padding: 2rem 0rem;
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
-    padding: 2rem 0.8rem;
     border-radius: 10px;
     position: sticky;
+    box-sizing: border-box;
+}
+.social *{
+    padding: 0.8rem;
+    border-radius: 10px;
+}
+.social .fa-twitter:hover, .social .fa-facebook-f:hover, .social .fa-instagram:hover, .social .fa-youtube:hover{
+    font-size: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.5s;
 }
 
 .main-part{
@@ -144,6 +156,12 @@ main{
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
+    z-index: 100;
+}
+.card:hover{
+    scale: 1.07;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+    transition: all 0.3s ease;
 }
 .card h1{
     color: #15847D;
