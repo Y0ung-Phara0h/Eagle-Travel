@@ -33,11 +33,7 @@ function createCard(img, titl, desc, country){
     cardsDiv.appendChild(divCard);
 };
 
-// Forwarding the user to the search bar upon clicking on the Book now Button
-// const searchBar = document.getElementById('search-bar');
-// document.getElementById('book-btn').addEventListener('click',()=>{
-//     searchBar.focus();
-// });
+
 
 function addCards() {
     const countryList = fetchedData.countries;
@@ -64,8 +60,21 @@ function addCards() {
         }else if(temple){
             createCard(temple.imageUrl, temple.name, temple.description, temple.country);
             searchArea.appendChild(cardsDiv);
+        }else if(queryTxt == "beach" || queryTxt == "beachs" || queryTxt == "coast" || queryTxt == "bay"){
+            beachList.forEach(beach=>createCard(beach.imageUrl, beach.name, beach.description, beach.country))
+            searchArea.appendChild(cardsDiv);
+        }else if(queryTxt == "temple" || queryTxt == "temples" || queryTxt == "historical" || queryTxt == "ancient"){
+            templeList.forEach(tem=>createCard(tem.imageUrl, tem.name, tem.description, tem.country))
+            searchArea.appendChild(cardsDiv);
         }
         else{
+            const textElement = document.querySelector('.main-part > h1');
+            textElement.textContent = "No Result has been found, Please try again by writing the correct word."
+            textElement.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+            textElement.style.backdropFilter = "blur(5px)";
+            textElement.style.textShadow = "1px 1px 3px #0F2D3A";
+            textElement.style.padding = "2rem 1rem";
+            textElement.style.borderRadius = "10px";
             console.log('No Result found');
         }
     }else{
@@ -84,7 +93,34 @@ function addCards() {
     }
 }
 
+// Cleaning Logic function
+function resetBtn() {
+    const headElement = document.querySelector('.main-part > h1');
+    const cardsDivElement = document.querySelector('.cards-div');
+    if(headElement && cardsDivElement){
+        headElement.remove();
+        cardsDivElement.remove();
+        searchAreaElements.forEach(elem=>{
+            elem.style.display = 'block';
+        })
+        searchArea.style.removeProperty("padding-right");
+        inputBox.value = "";
+    }else if(headElement){
+        headElement.remove();
+        searchAreaElements.forEach(elem=>{
+            elem.style.display = 'block';
+        })
+        searchArea.style.removeProperty("padding-right");
+        inputBox.value = "";
+    }
+}
 
+// Forwarding the user to the search bar upon clicking on the Book now Button
+document.getElementById('book-btn').addEventListener('click',()=>{
+    inputBox.focus();
+});
+
+// Listen to the Search button
 searchBtn.addEventListener('click', ()=>{
     searchAreaElements.forEach(elem=>{
         elem.style.display = 'none';
@@ -96,6 +132,13 @@ searchBtn.addEventListener('click', ()=>{
         h1Element.style.textShadow = "1px 1px 3px #0F2D3A";
         searchArea.appendChild(h1Element);
         searchArea.style.paddingRight = "0%";
+    }else if (elemento.value != "Search Result"){
+        elemento.textContent = "Search Result";
+        elemento.style.removeProperty("background-color");
+        elemento.style.removeProperty("backdrop-filter");
+        elemento.style.removeProperty("text-shadow");
+        elemento.style.removeProperty("padding");
+        elemento.style.removeProperty("border-radius");
     }
     if (cardsDiv.children.length > 0) {
         cardsDiv.replaceChildren();
@@ -106,4 +149,7 @@ searchBtn.addEventListener('click', ()=>{
      
 });
 
+// Listen to Reset button
+const clearBtn = document.querySelector('.clear-btn');
+clearBtn.addEventListener('click',()=>{resetBtn()});
 
