@@ -1,166 +1,283 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Let's Connect</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <style>
-        *{
-            margin:0;
-            padding:0;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            color: white;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        font-family:
+          "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        color: white;
+      }
 
-        .blur-effect{
-            background-color: rgba(255, 255, 255, 0.3);
-            backdrop-filter: blur(10px);
-            padding: 1.3rem 0.8rem;
-            border-radius: 10px;
-        }
+      .blur-effect {
+        background-color: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(10px);
+        padding: 1.3rem 0.8rem;
+        border-radius: 10px;
+      }
 
-        nav{
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            height: 8vh;
-            padding: 0.5rem 1rem;
-            background-color: #0F2D3A;
-            box-sizing: border-box;
-        }
-        nav > h1{
-            font-weight: 800;
-            font-style: italic;
-            position: absolute;
-            left: 10%;
-        }
-        ul{
-            display: flex;
-            gap: 3rem;
-            list-style: none;
-        }
-        li a{
-            text-decoration: none;
-            color: white;
-            font-weight: 600;
-        }
-        /*
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 8vh;
+        padding: 0.5rem 1rem;
+        background-color: #0f2d3a;
+        box-sizing: border-box;
+      }
+      nav > a {
+        text-decoration: none;
+        font-size: 2.5rem;
+        font-weight: 800;
+        font-style: italic;
+        position: absolute;
+        left: 10%;
+      }
+      ul {
+        display: flex;
+        gap: 3rem;
+        list-style: none;
+      }
+      li a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+      }
+      /*
         ################################### Main Section ##################################
-        */
+      */
 
-        main{
-            padding: 1rem;
-            background-image: url('../src/Cairo.jpeg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            height: 92vh;
-            display: flex;
-            align-items: center;
-            box-sizing: border-box;
-        }
+      main {
+        padding: 1rem;
+        background-image: url("../src/Cairo.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 92vh;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+      }
 
-        .social{
-            display: flex;
-            flex-direction: column;
-            gap: 2.5rem;
-            margin: 2rem;
-            margin-left: 0.5rem;
-            font-size: 1.5rem;
-        }
-        
-        .main-part{
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            width: 100%;
-        }
-        .text-part > h1{
-            font-size: 5rem;
-            margin-bottom: 1.5rem;
-            text-align: center;
-            text-shadow: 1px 1px 3px #0F2D3A;
-        }
-        .text-part > p{
-            margin-bottom: 1rem;
-            margin-left: 5%;
-            margin-right: 5%;
-            font-size: 2rem;
-            text-align: center;
-            text-shadow: 1px 1px 3px #0F2D3A;
-        }
-        .form-part{
-            width: 35%;
-        }
-        form{
-            display: flex;
-            flex-direction: column;
-        }
-        form input, form textarea{
-            margin-top: 0.4rem;
-            margin-bottom: 1rem;
-            border: none;
-            padding: 0.5rem 0.8rem;
-            background-color: rgba(255, 255, 255, 0.4);
-            backdrop-filter: blur(15px);
-            border-radius: 10px;
-            color: #0F2D3A;
-            font-size: 1rem;
-            resize: none;
-        }
-        form label{
-            text-shadow: 1px 1px 3px #0F2D3A;
-            font-weight: 500;
-        }
-        #topic{
-            height: 5rem;
-            text-align: start;
-        }
-        form button{
-            border: none;
-            background-color: #0D6F6A;
-            width: 70%;
-            padding: 0.5rem;
-            border-radius: 10px;
-            font-size: 1.2rem;
-            align-self: center;
-        }
+      /* .social {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        margin: 2rem;
+        margin-left: 0.5rem;
+        font-size: 1.5rem;
+      } */
+      .social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 20%;
+        gap: 1.7rem;
+        margin: 2rem;
+        margin-left: 0.5rem;
+        font-size: 1.5rem;
+        padding: 2rem 0rem;
+        background-color: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        position: sticky;
+        box-sizing: border-box;
+      }
+      .social * {
+        padding: 0.8rem;
+        border-radius: 10px;
+      }
+      .social .fa-twitter:hover,
+      .social .fa-facebook-f:hover,
+      .social .fa-instagram:hover,
+      .social .fa-youtube:hover {
+        font-size: 2.5rem;
+        background-color: rgba(255, 255, 255, 0.5);
+        transition: all 0.5s;
+      }
+
+      .main-part {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+      }
+      .text-part > h1 {
+        font-size: 5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        text-shadow: 1px 1px 3px #0f2d3a;
+      }
+      .text-part > p {
+        margin-bottom: 1rem;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 2rem;
+        text-align: center;
+        text-shadow: 1px 1px 3px #0f2d3a;
+      }
+      .form-part {
+        width: 35%;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      form input,
+      form textarea {
+        margin-top: 0.4rem;
+        margin-bottom: 1rem;
+        border: none;
+        padding: 0.5rem 0.8rem;
+        background-color: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(15px);
+        border-radius: 10px;
+        color: #0f2d3a;
+        font-size: 1rem;
+        resize: none;
+      }
+      form label {
+        text-shadow: 1px 1px 3px #0f2d3a;
+        font-weight: 500;
+      }
+      #topic {
+        height: 5rem;
+        text-align: start;
+      }
+      form button {
+        border: none;
+        background-color: #0d6f6a;
+        width: 70%;
+        padding: 0.5rem;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        align-self: center;
+      }
+      /*
+        ################################### Dialog ##################################
+      */
+      #msg-modal {
+        align-self: center;
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1.5rem;
+        gap: 1.5rem;
+        border-radius: 10px;
+      }
+      #msg-modal::backdrop {
+        background-color: rgba(0, 0, 0, 0.45);
+      }
+      #msg-modal * {
+        color: #0f2d3a;
+        font-size: 2rem;
+      }
+      #msg-modal p {
+        max-width: 30vw;
+        text-align: center;
+        font-size: 1rem;
+      }
+      #msg-modal button {
+        border: none;
+        padding: 0.5rem 1.5rem;
+        background-color: #0d6f6a;
+        color: white;
+        border-radius: 10px;
+        font-size: 1.3rem;
+        font-weight: 700;
+        box-sizing: border-box;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <h1>Eagle Travel</h1>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="#">Contact us</a></li>
-        </ul>
+      <a href="../index.html">Eagle Travel</a>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
     </nav>
     <main>
-        <div class="social blur-effect">
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-youtube"></i>
+      <div class="social blur-effect">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+      <div class="main-part">
+        <div class="text-part">
+          <h1>CONTACT US</h1>
+          <p>Let's get in Touch</p>
         </div>
-        <div class="main-part">
-            <div class="text-part">
-                <h1>CONTACT US</h1>
-                <p>Let's get in Touch</p>
-            </div>
-            <div class="form-part blur-effect">
-                <form action="">
-                    <label for="name">Name</label>
-                    <input type="text" name="sender-name" id="name" placeholder="Enter your Name" required>
-                    <label for="email">Email</label>
-                    <input type="email" name="email-address" id="email" placeholder="Enter your Email" required>
-                    <label for="topic">Message</label>
-                    <textarea type="text" name="message" id="topic" placeholder="Enter your message" required></textarea>
-                    <button type="submit">Send</button>
-                </form>
-            </div>
+        <div class="form-part blur-effect">
+          <form action="">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="sender-name"
+              id="name"
+              placeholder="Enter your Name"
+              required
+            />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email-address"
+              id="email"
+              placeholder="Enter your Email"
+              required
+            />
+            <label for="topic">Message</label>
+            <textarea
+              type="text"
+              name="message"
+              id="topic"
+              placeholder="Enter your message"
+              required
+            ></textarea>
+            <button type="submit" id="open-modal">Send</button>
+          </form>
+          <dialog id="msg-modal" style="display: none">
+            <h2>Thank You</h2>
+            <p>
+              Your Message has been deliverd and our team will review and
+              respond as soon as possiable.
+            </p>
+            <button id="close-modal">Ok</button>
+          </dialog>
         </div>
+      </div>
     </main>
-</body>
+    <script>
+      // Creating Pop-Up Modal
+      const mainContainer = document.querySelector("main");
+      const openBtn = document.getElementById("open-modal");
+      const closeBtn = document.getElementById("close-modal");
+      const modal = document.getElementById("msg-modal");
+      openBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const formElements = document.querySelectorAll("#name, #email, #topic");
+        formElements.forEach((elem) => (elem.value = ""));
+        modal.style.removeProperty("display");
+        modal.showModal();
+      });
+      closeBtn.addEventListener("click", () => {
+        modal.close();
+        modal.style.display = "none";
+      });
+    </script>
+  </body>
 </html>
