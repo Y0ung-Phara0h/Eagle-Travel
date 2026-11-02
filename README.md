@@ -1,10 +1,10 @@
 ## 📊 Repository at a glance
 
 <p align="center">
-  <img src="https://img.shields.io/github/stars/Y0ung-Phara0h/Eagle-Travel?style=for-the-badge&logo=github&label=Stars" alt="GitHub stars" />
-  <img src="https://img.shields.io/github/forks/Y0ung-Phara0h/Eagle-Travel?style=for-the-badge&logo=git&label=Forks" alt="GitHub forks" />
-  <img src="https://img.shields.io/github/issues/Y0ung-Phara0h/Eagle-Travel?style=for-the-badge&logo=github&label=Issues" alt="Open issues" />
-  <img src="https://img.shields.io/github/last-commit/Y0ung-Phara0h/Eagle-Travel?style=for-the-badge&logo=github&label=Updated" alt="Last commit" />
+  <img src="https://img.shields.io/github/stars/Y0ung-Phara0h/Eagle-Travel?style=flat&logo=github&label=Stars" alt="GitHub stars" />
+  <img src="https://img.shields.io/github/forks/Y0ung-Phara0h/Eagle-Travel?style=flat&logo=git&label=Forks" alt="GitHub forks" />
+  <img src="https://img.shields.io/github/issues/Y0ung-Phara0h/Eagle-Travel?style=flat&logo=github&label=Issues" alt="Open issues" />
+  <img src="https://img.shields.io/github/last-commit/Y0ung-Phara0h/Eagle-Travel?style=flat&logo=github&label=Updated" alt="Last commit" />
 </p>
 
 <p align="center">
